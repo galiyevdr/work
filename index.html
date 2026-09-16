@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Инструменты для руководителя</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A2233; --ink-soft: #5B6478; --paper: #F3F4F7; --card: #FFFFFF;
+    --line: #E1E4EA; --accent: #2F5D50; --accent-soft: #DCE8E3; --accent-strong: #1F4238;
+    --shadow: rgba(26, 34, 51, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ink: #E7E9EF; --ink-soft: #9AA3B8; --paper: #171C29; --card: #1F2635;
+      --line: #303A4F; --accent: #4C9481; --accent-soft: #223A34; --accent-strong: #6FB6A3;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+  }
+  :root[data-theme="dark"] {
+    --ink: #E7E9EF; --ink-soft: #9AA3B8; --paper: #171C29; --card: #1F2635;
+    --line: #303A4F; --accent: #4C9481; --accent-soft: #223A34; --accent-strong: #6FB6A3;
+    --shadow: rgba(0, 0, 0, 0.4);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Manrope', system-ui, sans-serif; min-height: 100vh; }
+  .wrap { max-width: 640px; margin: 0 auto; padding: 64px 20px 60px; }
+  h1 { font-family: 'Spectral', serif; font-size: 1.7rem; margin: 0 0 6px; }
+  .sub { color: var(--ink-soft); font-size: 0.95rem; margin: 0 0 32px; max-width: 46ch; }
+  .tool {
+    display: block; background: var(--card); border: 1px solid var(--line); border-radius: 6px;
+    padding: 20px; margin-bottom: 16px; text-decoration: none; color: var(--ink); box-shadow: 0 1px 3px var(--shadow);
+  }
+  .tool:hover { border-color: var(--accent); }
+  .tool h2 { font-family: 'Spectral', serif; font-size: 1.15rem; margin: 0 0 6px; color: var(--accent-strong); }
+  .tool p { margin: 0; color: var(--ink-soft); font-size: 0.88rem; line-height: 1.5; }
+  .note { margin-top: 28px; font-size: 0.8rem; color: var(--ink-soft); line-height: 1.6; border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Инструменты для руководителя</h1>
+    <p class="sub">Две страницы для управления задачами и заметками. Откройте нужную ниже.</p>
+
+    <a class="tool" href="task-dashboard.html">
+      <h2>Панель поручений</h2>
+      <p>Постановка задач сотрудникам с календарём, красными датами и WhatsApp-напоминаниями.</p>
+    </a>
+
+    <a class="tool" href="calendar.html">
+      <h2>Календарь заметок</h2>
+      <p>Личный календарь с возможностью оставить заметку на любую дату.</p>
+    </a>
+
+    <p class="note">Открыто напрямую из этого репозитория через GitHub Pages: данные каждой страницы хранятся локально в браузере, в котором она открыта, и не синхронизируются между устройствами.</p>
+  </div>
+</body>
+</html>
